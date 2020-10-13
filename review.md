@@ -31,15 +31,15 @@ Boot time, threading performance, thread timer precision, random block read thro
 
 ## Pros (3-6 bullets)
 - Unikernels are light weight. System components are provided as libraries and linked to as needed, producing small binary size.
-- Unikernels are customizble. System components can be overriden with specialized libraries to suit application needs.
-- Unikernels are fast. Due to the lack of usespace/kernel boundary, some system calls can be made more efficient
-- Unikernels are scalable. Multiple communicating unikernels can form an application running like a distributed systems.
+- Unikernels are customizable. System components can be overridden with specialized libraries to suit application needs.
+- Unikernels are fast. Due to the lack of userspace/kernel boundary, some system calls can be made more efficient
+- Unikernels are scalable. Multiple communicating unikernels can form an application running like a distributed system.
 - Unikernels are secure. Besides the security provided by the hypervisor, static type checking and garbage collection can prevent a lot of memory errors.
 
 ## Cons (3-6 bullets)
 - An application in a unikernel can only be implemented in one language.
 - Multiple processes are not supported in one unikernel.
-- It is hard for unikernels to elimiate code written in unsafe language, from example from the runtime and the hypervisor.
+- It is hard for unikernels to elimiate code written in unsafe language, for example from the runtime and the hypervisor.
 
 ### What is your analysis of the proposed?
 
