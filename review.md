@@ -40,13 +40,12 @@ Boot time, threading performance, thread timer precision, random block read thro
 - An application in a unikernel can only be implemented in one language.
 - Multiple processes are not supported in one unikernel.
 - It is hard for unikernels to elimiate code written in unsafe language, for example from the runtime and the hypervisor.
+- The single address space model is prone to attacks, which may be why a type safe language is used.
 
 ### What is your analysis of the proposed?
 
-I do not think unikernels can replace containers, because the container ecosystem is already mature and they require application programmers to program differently than what they might have been used to, but I do think unikernels are very useful for cloud service providers who profit out of performance and security.
+I do not think unikernels can replace containers, because the container ecosystem is already mature and they require application programmers to program differently than what they might have been used to, but I do think unikernels are very useful for cloud service providers who profit out of performance and security in that they allow for a larger degree of customization.
 
 ## Details Comments, Observations, Questions
 
-I wish that the paper can be more clear about what is required for a unikernel and the nice, additional features. For example, I have trouble seeing why type safety is a part of the architecture of unikernels.
-
-
+I wish that the paper can be more clear about the line between what is required for a unikernel and the nice, additional features. For example, type safety is used to enhance security but I have also seen other unikernels that support unsafe languages, so type safety does not seem to be a part of the definition of unikernels.
